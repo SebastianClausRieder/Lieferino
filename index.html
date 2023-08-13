@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used Fonts -->
+    <!-- Covered By Your Grace -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!-- Style und Javascript -->
+    <link rel="stylesheet" href="style-files/dishes.css">
+    <link rel="stylesheet" href="style-files/fonts.css">
+    <link rel="stylesheet" href="style-files/header.css">
+    <link rel="stylesheet" href="style-files/order.css">
+    <link rel="stylesheet" href="style-files/r-head.css">
+    <link rel="stylesheet" href="style-files/search.css">
+    <link rel="stylesheet" href="style-files/shopping-cart.css">
+    <link rel="stylesheet" href="style-files/media-dishes-hori.css">
+    <link rel="stylesheet" href="style-files/media-dishes-verti.css">
+    <link rel="stylesheet" href="style-files/media-headers-hori.css">
+    <link rel="stylesheet" href="style-files/media-headers-verti.css">
+    <script src="java-files/change.js"></script>
+    <script src="java-files/dishes.js"></script>
+    <script src="java-files/order.js"></script>
+    <script src="java-files/search.js"></script>
+    <script src="java-files/w3-include-html.js"></script>
+    <!-- Favicon und Titel -->
+    <link rel="shortcut icon" href="img/Originale/Dinos/009-eat.png" type="image/x-icon">
+    <title>Lieferino</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Covered By Your Grace', cursive;
+            letter-spacing: 3px;
+            -ms-overflowstyle: none;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        /* none Responsive */
+
+        .d-show {
+            display: flex;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .bg-gray {
+            color: gray;
+        }
+
+        /* Responsive */
+        @media all and (max-width: 600px) {
+
+            .d-show {
+                display: flex;
+            }
+
+            .d-none {
+                display: none;
+            }
+
+            .bg-gray {
+                color: gray;
+            }
+        }
+
+        @media all and (min-width: 601px) and (max-width: 1000px) {
+
+            .d-show {
+                display: flex;
+            }
+
+            .d-none {
+                display: none;
+            }
+
+            .bg-gray {
+                color: gray;
+            }
+        }
+    </style>
+</head>
+
+<body onload="includeHTML(), order(), like()">
+    <div w3-include-html="header.html"></div>
+    <div class="restaurant-head">
+        <div class="img-contain01">
+            <img src="img/head-image.jpg" class="r-head-image">
+        </div>
+        <div class="restaurant-logo">
+            <div class="logo-bg">
+                <img src="img/Originale/Dinos/005-footprint.png" alt="" class="logo">
+            </div>
+        </div>
+        <div class="restaurant-infos">
+            <div class="info-like">
+                <h2 class="restaurant-name">Dino Rino</h2>
+                <div class="r-info-icons">
+                    <img src="img/icon/info-2-64.png" class="info-icons">
+                    <img src="" class="info-icons" id="like-icon" onclick="likeRestaurant()">
+                </div>
+            </div>
+            <div class="rating">
+                <img src="img/icon/star-filled.png" class="stars">
+                <img src="img/icon/star-filled.png" class="stars">
+                <img src="img/icon/star-filled.png" class="stars">
+                <img src="img/icon/star-filled.png" class="stars">
+                <img src="img/icon/star-empty.png" class="stars">
+                <span class="ratings">1.387 Bewertungen</span>
+            </div>
+            <div class="order-info">
+                <div class="order-media">
+                    <img src="img/icon/time-11-64.png" class="order-icons">
+                    <span class="order-text">25-55 minuten &#8226;</span>
+                </div>
+                <div class="order-media">
+                    <img src="img/icon/delivery-truck.png" class="order-icons-truck">
+                    <span class="order-text">2,00€ &#8226;</span>
+                </div>
+                <div class="order-media">
+                    <img src="img/icon/cart-29-64.png" class="order-icons">
+                    <span class="order-text">Min. 15,00€ &#8226;</span>
+                </div>
+            </div>
+            <div class="restaurant-text-contain">
+                <span class="restaurant-text">Gesundes Essen für Kinder, lecker und schonend zubereitet.</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-navbar" id="menubar">
+        <img src="img/icon/magnifying-glass-2-64.png" class="search" onclick="openSearch()">
+        <img src="img/icon/arrow-left.png" class="scroll-button-left" id="swipe-left" onclick="swipeLeft()">
+        <div class="button-container" id="button-container">
+            <a href="#vorspeisen" class="orderable-menus font-grace"><b>Vorspeißen</b></a>
+            <a href="#nudelgerichte" class="orderable-menus font-grace"><b>Nudelgerichte</b></a>
+            <a href="#wraps" class="orderable-menus font-grace"><b>Wraps</b></a>
+            <a href="#pizza" class="orderable-menus font-grace"><b>Pizza</b></a>
+            <a href="#süßspeisen" class="orderable-menus font-grace"><b>Süßespeißen</b></a>
+            <a href="#kuchen" class="orderable-menus font-grace"><b>Kuchen</b></a>
+        </div>
+        <img src="img/icon/arrow-right.png" class="scroll-button-right" onclick="swipeRight()">
+    </div>
+    <div class="interactioncenter">
+        <div class="order" id="order"></div>
+        <div class="searchcenter" id="searchcenter"></div>
+        <div class="respon-orderbutton-contain" id="respon-orderbutton-c"><button class="respon-orderbutton font-grace" id="respon-orderbutton" onclick="responOrder()"></button></div>
+    </div>
+    <div class="shopping-cart" id="cart">
+        <div class="thank-you" id="thx"></div>
+        <div class="sc-respon-contain">
+            <img src="img/icon/arrow-right.png" class="sc-respon-return" onclick="closeSC()">
+        </div>
+        <div class="shop-cart-head">
+            <h2 class="sc-title">Warenkorb</h2>
+        </div>
+        <div class="your-shopping-bag-empty" id="sc-empty">
+            <img src="img/icon/shopping-bag.png" class="empty-bag">
+            <span class="empty-bag-expression1"><b>Fülle deinen Warenkorb</b></span>
+            <span class="empty-bag-expression2">Füge leckere Gerichte aus der<br>Speisekarte hinzu und
+                bestelle<br><b>dein Essen.</b></span>
+        </div>
+        <div class="your-shopping-bag-filled" id="sc-filled"></div>
+        <div class="total-contain" id="totalprice"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@media all and (max-width: 600px) {
+    .interactioncenter {
+        width: 100%;
+    }
+
+    /* Menu Container */
+
+    .dish-menu-image {
+        width: 200%;
+    }
+
+    .dish-category {
+        font-size: 30px;
+    }
+
+    .dish-category-image {
+        width: 50px;
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+
+    .dish-menu-contain {
+        gap: 5px;
+    }
+
+    .dish-name {
+        width: 80%;
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .dish-info-icon {
+        width: 17px;
+    }
+
+    .order-icon {
+        width: 20px;
+    }
+
+    .dish-explanation {
+        font-size: 15px;
+    }
+
+    .dish-price {
+        font-size: 20px;
+    }
+
+    /* Searchcenter */
+
+    .searchcenter {
+        width: 100%;
+    }
+}

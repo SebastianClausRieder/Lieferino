@@ -1,0 +1,68 @@
+@media all and (max-width: 600px) {
+    
+    /* Header */
+
+    .header {
+        height: 80px;
+    }
+
+    .headline-image {
+        width: 50px;
+    }
+
+    .headline-title {
+        font-size: 50px;
+    }
+
+    .menu-icon {
+        width: 30px;
+    }
+
+    /* Restauraunt Head */
+
+    .restaurant-head {
+        width: 100%;
+    }
+
+    .restaurant-name {
+        font-size: 30px;
+    }
+
+    .info-icons {
+        width: 30px;
+    }
+
+    .order-info {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+    /* Menu Bar */
+
+    .menu-navbar {
+        width: 100%;
+    }
+
+    .scroll-button-right {
+        display: none;
+    }
+
+    .button-container {
+        width: 95%;
+    }
+
+    /* Shopping Cart */
+
+    .shopping-cart {
+        display: none;
+    }
+
+    .sc-respon-contain {
+        display: flex;
+    }
+}

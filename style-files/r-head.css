@@ -1,0 +1,131 @@
+.restaurant-head {
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contain01 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.r-head-image {
+    height: 700px;
+}
+
+.restaurant-logo {
+    width: 90%;
+    height: 75px;
+    transform: translateY(-80%)
+}
+
+.logo-bg {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.restaurant-infos {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -50px;
+}
+
+.info-like {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant-name {
+    font-size: 40px;
+}
+
+.r-info-icons {
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-icons {
+    width: 35px;
+    cursor: pointer;
+}
+
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars {
+    width: 15px;
+}
+
+.ratings {
+    margin-left: 10px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.order-info {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-icons {
+    height: 18px;
+}
+
+.order-icons-truck {
+    height: 27px;
+}
+
+.order-text {
+    font-size: 18px;
+}
+
+.restaurant-text-contain {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.restaurant-text {
+    font-size: 16px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,50 @@
+@media all and (min-width: 601px) and (max-width: 1000px) {
+
+    /* Header */
+
+    .header {
+        height: 80px;
+    }
+
+    .headline-image {
+        width: 50px;
+    }
+
+    .headline-title {
+        font-size: 50px;
+    }
+
+    .menu-icon {
+        width: 40px;
+    }
+
+    /* Restauraunt Head */
+
+    .restaurant-head {
+        width: 100%;
+    }
+
+    /* Menu Bar */
+
+    .menu-navbar {
+        width: 100%;
+    }
+
+    .scroll-button-right {
+        display: none;
+    }
+
+    .button-container {
+        width: 95%;
+    }
+
+    /* Shopping Cart */
+
+    .shopping-cart {
+        display: none;
+    }
+
+    .sc-respon-contain {
+        display: flex;
+    }
+}

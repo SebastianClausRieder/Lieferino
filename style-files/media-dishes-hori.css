@@ -1,0 +1,17 @@
+@media all and (min-width: 601px) and (max-width: 1000px) {
+    .interactioncenter {
+        width: 100%;
+    }
+
+    /* Menu Container */
+
+    .dish-menu-image {
+        width: 120%;
+    }
+
+    /* Searchcenter */
+
+    .searchcenter {
+        width: 100%;
+    }
+}
